@@ -49,7 +49,8 @@ systemctl enable docker.service
 2、运行镜像容器
 
 ```
-docker run -itd --net=host --privileged=true --name=wechat-self wechat-self /usr/sbin/init
+mkdir -p /root/media
+docker run -itd -v /root/media:/root/wechat-ee/wechat/media --net=host --privileged=true --name=wechat-self wechat-self /usr/sbin/init
 ```
 3、将容器设置成开机运行
 
