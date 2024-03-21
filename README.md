@@ -58,12 +58,12 @@ docker run -itd -v /root/media:/root/wechat-ee/wechat/media --net=host --privile
 docker update --restart=always wechat-self
 ```
 #### 使用教程
-- 首次使用需要同步E云账号，参数请按照实际填写
+- 首次使用需要在服务器执行curl命令同步E云账号，参数请按照实际填写
   - baseUrl: E云平台的地址
   - userName: E云平台账号
   - password: E云平台密码 
   ```shell
-  curl --location --request POST 'http://服务器ip:9899/sync/account' \
+  curl --location --request POST 'http://127.0.0.1:9899/sync/account' \
   --header 'Content-Type: application/json' \
   -d '{
       "password": "111111",
