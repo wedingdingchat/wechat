@@ -56,19 +56,20 @@ docker update --restart=always wechat-self
 ```
 #### 使用教程
 - 首次使用需要在服务器执行curl命令同步E云账号，参数请按照实际填写
-  - baseUrl: E云平台的地址
+  - baseUrl: E云平台的BaseUrl
   - userName: E云平台账号
   - password: E云平台密码 
   ```shell
   curl --location --request POST 'http://127.0.0.1:9899/sync/account' \
   --header 'Content-Type: application/json' \
   -d '{
-      "password": "111111",
-      "userName": "188888888",
-      "baseUrl": "http://110.120.119.0:9899"
+      "userName": "E云平台账号",
+      "password": "E云平台密码",
+      "baseUrl":  "E云平台BaseUrl" 
   }'
   ```
 - 服务调用地址：http://服务器ip:9899
+- 
 - 文件/图片下载会返回文件相对路径，在文件地址前拼接此地址即可访问：http://服务器ip:9002/media/
 - [api接口地址（点击）](https://www.wkteam.cn/api-wen-dang2/)
 
