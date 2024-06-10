@@ -69,7 +69,6 @@ docker update --restart=always wechat-self
   }'
   ```
 - 服务调用地址：http://服务器ip:9899
-- 
 - 文件/图片下载会返回文件相对路径，在文件地址前拼接此地址即可访问：http://服务器ip:9002/media/
 - [api接口地址（点击）](https://www.wkteam.cn/api-wen-dang2/)
 
