@@ -4,7 +4,7 @@
 
 
 #### 介绍
-wechat-self是E云API业务私有部署产品，当用户使用E云API需要频繁调用下载类接口、考虑数据安全问题或为了防止Saas环境波动等情况时可使用wechat-self实现私有化部署，此项目是通过Docker容器部署，部署项目前服务器需先安装Docker。
+wechat-self是E云api本地化部署产品，当用户需求频繁下载、批量下载，云服务带宽响应速度已无法满足用户需求时，可使用wechat-self实现本地化部署，此项目是通过docker容器部署，部署项目前服务器需先安装docker。
 
 
 #### centos docker安装(已安装docker可跳过)  
