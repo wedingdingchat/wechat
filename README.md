@@ -74,7 +74,7 @@ docker update --restart=always wechat-self
 - [api接口地址（点击）](https://www.wkteam.cn/api-wen-dang2/)
 
 
-后续有新版本如何更新？
+## 后续有新版本如何更新？
 #### 更新流程
 
 ```
