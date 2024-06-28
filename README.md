@@ -68,7 +68,7 @@ docker update --restart=always wechat-self
     ./install-wechat.sh
 ```
 #### 更新日志（点击下载）
-#### [2024-06-28](https://pan.xunlei.com/s/VO0SvSXrgzT_svs3djNNDeuaA1?pwd=ue7s) 
+#### [2024-06-28](https://pan.xunlei.com/s/VO0TpcjIgzT_svs3djNNYsHfA1?pwd=hxey#) 
 
 #### 注意事项
 
