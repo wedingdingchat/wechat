@@ -78,11 +78,17 @@ docker update --restart=always wechat-self
 #### 更新流程
 
 ```
-1、选择更新版本下载
-2、将文件解压至服务器root目录
-3、执行命令
-    chmod +x install-wechat.sh
-    ./install-wechat.sh
+1、导出微信设备信息
+http://服务器ip:9899/exportWxInfo
+{
+    "wids":["wxid***6doh22"]
+}
+2、删除镜像重新下载镜像
+3、导入微信设备信息
+http://服务器ip:9899/importWxInfo
+{
+    "data":"1556389ACA3AC809EFAF74ADB03B31EECA6404B198812A312BC306DE77E3EC7AB135F91766EABF8FB6A6A444D....."
+}
 ```
 
 #### 注意事项
