@@ -78,12 +78,16 @@ docker update --restart=always wechat-self
 #### 更新流程
 
 ```
+本地化更新流程
+
 1、导出本地化微信设备信息
 http://本地化服务ip:9899/exportWxInfo
 {
-    "wids":["wxid***6doh22"]
+    "wids":["wxid***6doh22"] //wcId
 }
+
 2、删除镜像重新下载镜像
+
 3、导入微信设备信息
 http://本地化服务ip:9899/importWxInfo
 {
@@ -91,11 +95,13 @@ http://本地化服务ip:9899/importWxInfo
 }
 
 此接口也可以通过导出sass服务的微信并导入本地化
+
 1、导出sass微信设备信息
 http://sass服务ip:9899/exportWxInfo
 {
-    "wids":["wxid***6doh22"]
+    "wids":["wxid***6doh22"] //wcId
 }
+
 2、导入本地化微信设备信息
 http://本地化服务ip:9899/importWxInfo
 {
