@@ -94,15 +94,17 @@ http://本地化服务ip:9899/importWxInfo
     "data":"1556389ACA3AC809EFAF74ADB03B31EECA6404B198812A312BC306DE77E3EC7AB135F91766EABF8FB6A6A444D....." //导出设备信息返回数据
 }
 
-此接口也可以通过导出sass服务的微信并导入本地化
+本地化微信如何登录
 
-1、导出sass微信设备信息
+1、通过平台或api在sass服务中登录微信
+
+2、导出sass微信设备信息
 http://sass服务ip:9899/exportWxInfo
 {
     "wids":["wxid***6doh22"] //wcId
 }
 
-2、导入本地化微信设备信息
+3、导入本地化微信设备信息
 http://本地化服务ip:9899/importWxInfo
 {
     "data":"1556389ACA3AC809EFAF74ADB03B31EECA6404B198812A312BC306DE77E3EC7AB135F91766EABF8FB6A6A444D....." //导出设备信息返回数据
@@ -110,7 +112,7 @@ http://本地化服务ip:9899/importWxInfo
 ```
 
 #### 注意事项
-
+- 本地化部署不支持扫码登录，需在sass登录成功后导出微信信息然后再导入到本地化服务中
 - 由于容器和linux系统端口共用，建议linux系统不要安装和运行其他服务导致端口冲突
 - 容器需要访问外网链接微信服务，服务器出口网络需要全部放开，否则会导致服务无法正常启动
 - 扫码出现“在新设备完成验证以继续登录”deviceType传car重新取码登录，本地化版本不支持mac类型取码
