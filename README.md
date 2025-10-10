@@ -75,6 +75,24 @@ docker update --restart=always wechat-self
 
 
 ## 后续有新版本如何更新？
+#### 登录流程
+```
+本地化微信如何登录
+
+1、通过平台或api在sass服务中登录微信
+
+2、导出sass微信设备信息
+http://sass服务ip:9899/exportWxInfo
+{
+    "wids":["wxid***6doh22"] //wcId
+}
+
+3、导入本地化微信设备信息
+http://本地化服务ip:9899/importWxInfo
+{
+    "data":"1556389ACA3AC809EFAF74ADB03B31EECA6404B198812A312BC306DE77E3EC7AB135F91766EABF8FB6A6A444D....." //导出设备信息返回数据
+}
+```
 #### 更新流程
 
 ```
@@ -94,21 +112,7 @@ http://本地化服务ip:9899/importWxInfo
     "data":"1556389ACA3AC809EFAF74ADB03B31EECA6404B198812A312BC306DE77E3EC7AB135F91766EABF8FB6A6A444D....." //导出设备信息返回数据
 }
 
-本地化微信如何登录
 
-1、通过平台或api在sass服务中登录微信
-
-2、导出sass微信设备信息
-http://sass服务ip:9899/exportWxInfo
-{
-    "wids":["wxid***6doh22"] //wcId
-}
-
-3、导入本地化微信设备信息
-http://本地化服务ip:9899/importWxInfo
-{
-    "data":"1556389ACA3AC809EFAF74ADB03B31EECA6404B198812A312BC306DE77E3EC7AB135F91766EABF8FB6A6A444D....." //导出设备信息返回数据
-}
 ```
 
 #### 注意事项
