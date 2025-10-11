@@ -72,12 +72,9 @@ docker update --restart=always wechat-self
 - 服务调用地址：http://服务器ip:9899
 - 文件/图片下载会返回文件相对路径，在文件地址前拼接此地址即可访问：http://服务器ip:9002/media/
 - [api接口地址（点击）](https://www.wkteam.cn/api-wen-dang2/)
-
-
-## 后续有新版本如何更新？
-#### 登录流程
+#### 微信登录流程
 ```
-本地化微信如何登录
+本地化微信登录步骤
 
 1、通过平台或api在sass服务中登录微信
 
@@ -93,6 +90,9 @@ http://本地化服务ip:9899/importWxInfo
     "data":"1556389ACA3AC809EFAF74ADB03B31EECA6404B198812A312BC306DE77E3EC7AB135F91766EABF8FB6A6A444D....." //导出设备信息返回数据
 }
 ```
+
+## 后续有新版本如何更新？
+
 #### 更新流程
 
 ```
